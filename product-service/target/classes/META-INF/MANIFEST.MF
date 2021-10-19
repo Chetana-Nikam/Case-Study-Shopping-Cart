@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Build-Jdk-Spec: 16
+Implementation-Title: spring-boot-mongodb-rest-api
+Implementation-Version: 0.0.1-SNAPSHOT
+Main-Class: in.bushansirgur.restapi.SpringBootMongodbRestApiApplication
+Created-By: Maven Integration for Eclipse
+

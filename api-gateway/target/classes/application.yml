@@ -1,0 +1,36 @@
+#spring:
+#  application:
+#    name: api-gateway
+#  
+server:
+  port: 9000
+  
+
+spring:
+  application:
+    name: API-gateway
+  cloud:
+    gateway:
+      routes:
+      - id: product-service
+        uri: http://localhost:7505/
+        predicates:
+        - Path=/**
+      - id: auth-service
+        uri: http://localhost:7501/
+        predicates:
+        - Path=/**
+      - id: payment-service
+        uri: http://localhost:7503/
+        predicates:
+        - Path=/**
+      - id: admin-service
+        uri: http://localhost:7500/
+        predicates:
+        - Path=/**
+        
+        
+        
+        
+
+      
